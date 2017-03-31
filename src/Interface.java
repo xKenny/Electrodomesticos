@@ -6,7 +6,7 @@
 
 /**
  *
- * @author lenovo
+ * @author Duvan y David
  */
 public interface Interface {
     

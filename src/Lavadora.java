@@ -6,7 +6,7 @@
 
 /**
  *clase hija de electrodomesticos
- * @author Duvan
+ * @author Duvan y David
  */
 public class Lavadora extends Electrodomesticos{
     /*atributos de la clase*/

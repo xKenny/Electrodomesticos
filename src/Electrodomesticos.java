@@ -6,7 +6,7 @@
 
 /**
  *clase padre con atributos de electrodomesticos
- * @author Duvan
+ * @author Duvan y David
  */
 public abstract class Electrodomesticos implements Interface {
     protected double precio;

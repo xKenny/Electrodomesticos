@@ -6,7 +6,7 @@
 
 /**
  *clase hija de electrodomesitcos
- * @author Duvan
+ * @author Duvan y David
  */
 public class Television extends Electrodomesticos {
     /*atributos de la clase*/

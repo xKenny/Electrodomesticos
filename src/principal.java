@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author lenovo
+ * @author Duvan y David
  */
 public class principal {
 
