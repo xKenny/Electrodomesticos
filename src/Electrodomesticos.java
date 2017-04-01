@@ -10,15 +10,15 @@
  */
 public abstract class Electrodomesticos implements Interface {
     protected double precio;
-    protected String color;
-    protected String consumo;
+    protected Color color;
+    protected Consumo consumo;
     protected double peso;
     
     /*constructor valores por defecto*/
     public Electrodomesticos(){
         this.precio=100.0;
-        this.color="BLANCO";
-        this.consumo="F";
+        this.color=Color.blanco;
+        this.consumo=Consumo.f;
         this.peso=5.0;
 }
     /*constructor que solo recibe precio y peso*/
@@ -27,23 +27,26 @@ public abstract class Electrodomesticos implements Interface {
         this.peso=peso;
     }
     /*constructor que recibe todos los atributos*/
-    public Electrodomesticos(double precio, String color, String consumo, double peso){
+    public Electrodomesticos(double precio, Color color, Consumo consumo, double peso){
        
         /*atributos de la clase*/
         this.precio=precio;
-        this.color=color;
+        this.color= color;
         this.consumo=consumo;
         this.peso=peso;
     }
     /*metodo que retorna si el consumo energetico es valido*/
+    @Override
     public boolean comprobarConsumoEnergetico(){
-        return (!"A".equals(consumo)||!"B".equals(consumo)||!"C".equals(consumo)||!"D".equals(consumo)||!"E".equals(consumo)||!"F".equals(consumo));
+        return (!"a".equals(consumo)||!"b".equals(consumo)||!"c".equals(consumo)||!"d".equals(consumo)||!"e".equals(consumo)||!"f".equals(consumo));
     }
     /*metodo que verifica si el color es valido*/
-    public static boolean comprobarColor(){
+    @Override
+    public  boolean comprobarColor(){
         return true;
     }
     /*metodo que calcula el precio final del producto*/
+    @Override
     public double precioFinal(){
         return precio;
     }
@@ -52,11 +55,11 @@ public abstract class Electrodomesticos implements Interface {
         return precio;
     }
 
-    public String getColor() {
+    public Color getColor() {
         return color;
     }
 
-    public String getConsumo() {
+    public Consumo getConsumo() {
         return consumo;
     }
 

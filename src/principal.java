@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author Duvan y David
+ * @author Duvan poveda y David jimenez
  */
 public class principal {
 
@@ -19,34 +19,34 @@ public class principal {
     public static void main(String[] args) {
         Scanner teclado= new Scanner(System.in);
         Electrodomesticos[] venta= new Electrodomesticos[10];
-        venta[0]= new Lavadora(200.0,"negro","B",20.0,10.0);
+        venta[0]= new Lavadora(200.0,Color.negro,Consumo.b,20.0,10.0);
         System.out.println("El precio del producto 1 es:");
         System.out.println(venta[0].precioFinal()+" EUROS");
-        venta[1]= new Lavadora(220.0,"rojo","A",21.0,12.0);
+        venta[1]= new Lavadora(220.0,Color.rojo,Consumo.a,21.0,12.0);
         System.out.println("El precio del producto 2 es:");
         System.out.println(venta[1].precioFinal()+" EUROS");
-        venta[2]= new Television(120.0,"negro","C",15.0,20.0,true);
+        venta[2]= new Television(120.0,Color.azul,Consumo.c,15.0,20.0,true);
         System.out.println("El precio del producto 3 es:");
         System.out.println(venta[2].precioFinal()+" EUROS");
-        venta[3]= new Lavadora(210.0,"gris","D",18.0,8.0);
+        venta[3]= new Lavadora(210.0,Color.gris,Consumo.d,18.0,8.0);
         System.out.println("El precio del producto 4 es:");
         System.out.println(venta[3].precioFinal()+" EUROS");
-        venta[4]= new Lavadora(230.0,"azul","A",25.0,12.0);
+        venta[4]= new Lavadora(230.0,Color.azul,Consumo.a,25.0,12.0);
         System.out.println("El precio del producto 5 es:");
         System.out.println(venta[4].precioFinal()+" EUROS");
-        venta[5]= new Lavadora(180.0,"blanco","F",20.0,8.0);
+        venta[5]= new Lavadora(180.0,Color.blanco,Consumo.e,20.0,8.0);
         System.out.println("El precio del producto 6 es:");
         System.out.println(venta[5].precioFinal()+" EUROS");
-        venta[6]= new Television(100.0,"azul","E",10.0,15.0,false);
+        venta[6]= new Television(100.0,Color.negro,Consumo.f,10.0,15.0,false);
         System.out.println("El precio del producto 7 es:");
         System.out.println(venta[6].precioFinal()+" EUROS");
-        venta[7]= new Television(110.0,"blanco","A",12.0,16.0,false);
+        venta[7]= new Television(110.0,Color.blanco,Consumo.a,12.0,16.0,false);
         System.out.println("El precio del producto 8 es:");
         System.out.println(venta[7].precioFinal()+" EUROS");
-        venta[8]= new Television(120.0,"negro","F",18.0,20.0,true);
+        venta[8]= new Television(120.0,Color.rojo,Consumo.b,18.0,20.0,true);
         System.out.println("El precio del producto 9 es:");
         System.out.println(venta[8].precioFinal()+" EUROS");
-        venta[9]= new Lavadora(250.0,"gris","E",28.0,15.0);
+        venta[9]= new Lavadora(250.0,Color.gris,Consumo.a,28.0,15.0);
         System.out.println("El precio del producto 10 es:");
         System.out.println(venta[9].precioFinal()+" EUROS");
         

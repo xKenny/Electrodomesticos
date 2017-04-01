@@ -20,7 +20,7 @@ public class Lavadora extends Electrodomesticos{
         super(precio, peso);
     }
     /*construcctor que recibe todos los atributos*/ 
-    public Lavadora(double precio, String color, String consumo, double peso, double carga) {
+    public Lavadora(double precio, Color color, Consumo consumo, double peso, double carga) {
         super(precio, color, consumo, peso);
         this.carga = carga;
     }
@@ -29,22 +29,22 @@ public class Lavadora extends Electrodomesticos{
     public double precioFinal() {
         double consuPreci=0.0, pesoPreci=0.0;
         switch(consumo){
-            case "A":
+            case a:
                 consuPreci=100.0;
                 break;
-            case "B":
+            case b:
                 consuPreci=80.0;
                 break;
-            case "C":
+            case c:
                 consuPreci=60.0;
                 break;
-            case "D":
+            case d:
                 consuPreci=50.0;
                 break;
-            case "E":
+            case e:
                 consuPreci=30.0;
                 break;
-            case "F":
+            case f:
                 consuPreci=10.0;
                 break;
         }

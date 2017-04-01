@@ -5,9 +5,13 @@
  */
 
 /**
- *
+ * clase de nombre interface con 3 metodos vacios 
  * @author Duvan y David
  */
 public interface Interface {
+    public boolean comprobarConsumoEnergetico();
+    public boolean comprobarColor();
+    public double precioFinal();
+    
     
 }
